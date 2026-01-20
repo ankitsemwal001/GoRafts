@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+   
+.jolly-font {
+  font-family: 'Jolly Lodger', cursive;
+}
+.josefin-sans{
+  font-family: 'Josefin Sans' , cursive;
+}
+body{
+  background-color: #E0F7FA;
+}
+
+.clip-wave {
+  clip-path: path("M0,64 C480,160 960,-32 1440,64 L1440,160 L0,160 Z");
+}
+
+/* 🌟 Container */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 92vh;
+  overflow: hidden;
+  /* No opacity/animation here */
+}
+
+/* 🎥 Background zoom */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: slowZoom 10s ease-out forwards;
+  z-index: 10;
+}
+
+/* 🌌 Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3), transparent);
+  z-index: 20;
+}
+
+/* 💥 Text animation */
+.hero-text {
+  position: relative;
+  z-index: 50;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 1.5rem 4rem 1.5rem;
+}
+
+/* 🌊 Waves */
+.waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 40;
+  pointer-events: none;
+}
+
+/* 🌊 Foreground SVG */
+.wave-svg {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* 🔑 Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1.1); }
+  to { transform: scale(1); }
+}
+
+/* 👌 Utility animation classes */
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+.delay-2 {
+  animation-delay: 2s;
+}
+
+.delay-3 {
+  animation-delay: 2.5s;
+}
+.river-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.river-gradient {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+}
+
+.river-svg {
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.3; }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-scale {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes slideBg {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slideBg { animation: slideBg 10s linear infinite; }
+.animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
+.animate-fadeUp { animation: fadeUp 0.5s ease-out forwards; }
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeUp {
+  animation: fadeUp 0.5s ease-out forwards;
+}
+.hover\\:scale-103:hover {
+  transform: scale(1.03);
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeRight {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
+.animate-fadeDown { animation: fadeDown 0.6s ease-out forwards; }
+.animate-fadeLeft { animation: fadeLeft 0.7s ease-out forwards; }
+.animate-fadeRight { animation: fadeRight 0.7s ease-out forwards; }

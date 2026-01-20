@@ -1,0 +1,89 @@
+.main {
+  background: linear-gradient(to right, #ffffff, #fffbeb, #ffedd5);
+}
+
+/* INFO: Marquee code  */
+.marqueeContainer {
+  width: 100%;
+  height: auto; /* Let it grow */
+  background-color: transparent;
+  padding: 1rem 0;
+  overflow: hidden;
+  margin-top: clamp(5rem, 10vw, 10rem);
+}
+
+.marqueeItem {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 2rem;
+  white-space: nowrap;
+}
+
+
+
+@media (min-width: 600px) {
+  .cardImages .arrowBtn {
+    right: clamp(25px, 15vw, 150px);
+  }
+  .Images .arrowBtn {
+    left: clamp(25px, 15vw, 150px);
+  }
+}
+
+@media (min-width: 768px) {
+  /* INFO: Hero Section code for larger screens */
+
+  .heroSection .heroDiv {
+    align-items: normal;
+    justify-content: normal;
+    padding-top: clamp(5rem, 10vw, 12rem);
+  }
+
+  .heroSection .heroDiv .heroContent {
+    justify-content: start;
+    padding-left: clamp(4rem, 10vw, 15rem);
+    align-items: start;
+  }
+
+  .heroSection .cards .card:last-child {
+    display: flex;
+  }
+
+  /* INFO: CAMPS SECTION CODE */
+
+  .card1 .cardContent .mainPara {
+    display: flex;
+  }
+
+  .card1 .cardContent .mobilePara {
+    display: none;
+  }
+
+  .card2 .cardContent {
+    width: 50%;
+  }
+
+  .card2 .arrow_img {
+    top: clamp(180px, 45vw, 500px);
+  }
+
+  .card2 .cardContent .mainPara {
+    display: flex;
+  }
+
+  .card2 .cardContent .mobilePara {
+    display: none;
+  }
+
+  /* Stroke overlay */
+  .cardImages .stroke_Img {
+    left: clamp(-50px, -5vw, -10px);
+  }
+}
+
+@media (min-width: 1500px) {
+  /* Stroke overlay */
+  .cardImages .stroke_Img {
+    left: clamp(-20px, -5vw, -10px);
+  }
+}
