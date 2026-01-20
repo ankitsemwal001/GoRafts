@@ -129,7 +129,7 @@ const Footer = ({ bgClass = "bg-transparent" }) => {
             rel="noopener noreferrer"
             className="text-gray-700 hover:text-gray-900"
           >
-            Kshitiz Kothari
+            Ankit Semwal
           </a>{" "}
           &{" "}
           <a
@@ -138,7 +138,7 @@ const Footer = ({ bgClass = "bg-transparent" }) => {
             rel="noopener noreferrer"
             className="text-gray-700 hover:text-gray-900"
           >
-            Aman Nakoti
+            Ankit Semwal
           </a>
         </p>
       </div>
