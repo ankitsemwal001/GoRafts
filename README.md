@@ -74,7 +74,7 @@ npm run dev
 
 
 📝 License / Copyright
-© 2025 Aman Nakoti & Kshitiz Kothari. Licensed to GoRafts for use only.
+© 2025 Ankit. Licensed to GoRafts for use only.
 Unauthorized copying, distribution, or resale of this code is prohibited.
 
 yaml
