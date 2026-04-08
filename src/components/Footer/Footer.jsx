@@ -130,15 +130,6 @@ const Footer = ({ bgClass = "bg-transparent" }) => {
             className="text-gray-700 hover:text-gray-900"
           >
             Ankit Semwal
-          </a>{" "}
-          &{" "}
-          <a
-            href="https://www.linkedin.com/in/amannakoti/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-700 hover:text-gray-900"
-          >
-            Ankit Semwal
           </a>
         </p>
       </div>
