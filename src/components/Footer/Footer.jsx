@@ -1,5 +1,5 @@
 /**
- * © 2025 Kshitiz Kothari & Aman Nakoti. Website design & development by Kshitiz Kothari and Aman Nakoti.
+ * © 2025 Ankit Semwal. Website design & development by Ankit Semwal.
  * Licensed to GoRafts for use and management.
  * All rights reserved.
  */
@@ -124,7 +124,7 @@ const Footer = ({ bgClass = "bg-transparent" }) => {
         <p className="mt-1 font-medium">
           Designed & Developed by{" "}
           <a
-            href="https://www.linkedin.com/in/kshitiz-kothari/"
+            href="https://www.linkedin.com/in/ankit-semwal-9376a72ba/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-700 hover:text-gray-900"
